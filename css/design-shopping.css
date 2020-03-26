@@ -1,0 +1,72 @@
+
+#msform {
+	text-align: center;
+	position: relative;
+  display: inline-block;
+  margin-top: -150px;
+  margin-left: 60%;
+}
+#msform fieldset {
+	background: white;
+	border: 0 none;
+	border-radius: 3px;
+	box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+	padding: 20px 30px;
+	box-sizing: border-box;
+  font-family: 'Bitter', serif;
+	width: 500px;
+  height: 400px;
+
+
+
+	/*stacking fieldsets above each other*/
+	position: relative;
+
+}
+/*Hide all except first fieldset*/
+#msform fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#msform input, #msform textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	margin-bottom: 40px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: 'Bitter', serif;
+	color: #2C3E50;
+	font-size: 13px;
+}
+/*buttons*/
+#msform .action-button {
+	width: 300px;
+	background: #6b7494;
+	font-weight: bold;
+  font-family: 'Bitter', serif;
+	color: white;
+	border-radius: 20px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 15px 0px 60px;
+}
+#msform .action-button:hover, #msform .action-button:focus {
+		box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+}
+/*headings*/
+.fs-title {
+	font-size: 15px;
+  letter-spacing: .5px;
+  font-family: 'Bitter', serif;
+	text-transform: uppercase;
+	color: #6b7494;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+  font-family: 'Bitter', serif;
+	font-size: 13px;
+	color: #707070;
+	margin-bottom: 20px;
+}
