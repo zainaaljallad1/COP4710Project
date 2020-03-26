@@ -1,0 +1,39 @@
+body {
+  background-color: #F7FCFF;
+}
+
+
+h1 {
+  position: relative;
+  margin-left: 10%;
+  margin-top: 10%;
+  margin-bottom: 0%;
+  font-size: 72px;
+  color: #6b7494;
+  font-family: 'Bitter', serif;
+}
+a {
+  color: #6b7494;
+  transition: all .2s ease-in-out;
+  text-decoration: none;
+
+}
+a:hover { letter-spacing: 4px; }
+
+.menu {
+  margin-left: 10%;
+  font-size: 22px;
+  color: #6b7494;
+  font-family: 'Bitter', serif;
+
+}
+
+.divider {
+         border-right: 6px solid #707070;
+         position: absolute;
+         left: 50%;
+         top: 0;
+         height: 900px;
+         display: inline-block;
+         margin-bottom: 0;
+}
