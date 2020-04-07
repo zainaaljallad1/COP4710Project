@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Office Supply Store </title>
+    <link rel="stylesheet" href="css/design-cart.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <h1 class="title"> Office Supplies </h1>
+
+  <div class="menu">
+    <div>
+    <a href="shopping.html"> Shop </a>
+    </div>
+
+    <div>
+    <a href="discount.html"> Check Discount Status </a>
+    </div>
+
+    <div>
+    <a href="login.html"> Login </a>
+    </div>
+
+    <div>
+    <a href="signup.html"> Sign Up </a>
+    </div>
+  </div>
+
+<div class = "divider"></div>
+    <div class="shopping-cart">
+      <!-- Product #1 -->
+      <div class="item">
+
+        <div class="image">
+          <img src="assets/paper.jpg"> </img>
+        </div>
+
+        <div class="description">
+          <span>Paper</span>
+        </div>
+
+        <div class="quantity">
+          <button class="minus-btn" type="button" name="button" onclick="decrementValue()" value="Decrement Value">
+            <img src="assets/minus.svg"> </img>
+          </button>
+          <input type="text" id="name" value="1"/>
+            <button class="plus-btn" type="button" name="button" onclick="incrementValue()" value="Increment Value">
+              <img src="assets/plus.svg"> </img>
+          </button>
+        </div>
+
+        <div class="total-price" id="totalCost" value = "10"></div>
+      </div>
+
+      <form name = "form1" style="margin-left:90px;>
+        <ul>
+          <label for="name">Enter Discount Code:</label>
+          <input type="text" id="name" name="user_name">
+          <button class="button1">Submit</button>
+        </ul>
+        <div style="margin-left:35%;
+              font-family:'Baloo Thambi 2', cursive;">
+              OR </div>
+
+
+      <button  class="discount" onclick="newDiscount()"> Request Discount</button>
+        <button style="margin-left:80%;margin-top:10%;"  class="button1" onclick="newDiscount()"> Check Out</button>
+
+          </form>
+      </div>
+
+    <script type="text/javascript" src="js/cart-js.js"></script>
+</body>
+</html>
