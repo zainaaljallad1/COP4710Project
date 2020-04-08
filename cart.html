@@ -42,32 +42,40 @@
         </div>
 
         <div class="quantity">
-          <button class="minus-btn" type="button" name="button" onclick="decrementValue()" value="Decrement Value">
+
+          <button class="minus-btn" type="button" name="button" onclick="decrementValue()"
+           value="Decrement Value">
             <img src="assets/minus.svg"> </img>
           </button>
+
           <input type="text" id="name" value="1"/>
-            <button class="plus-btn" type="button" name="button" onclick="incrementValue()" value="Increment Value">
+
+            <button class="plus-btn" type="button" name="button" onclick="incrementValue()"
+             value="Increment Value">
               <img src="assets/plus.svg"> </img>
           </button>
+
         </div>
 
         <div class="total-price" id="totalCost" value = "10"></div>
       </div>
 
-      <form name = "form1" style="margin-left:90px;>
+      <form name = "form1" style="margin-left:50px;">
         <ul>
-          <label for="name">Enter Discount Code:</label>
+          <label for="name" class="discount_title" style="font-size:20px;margin-left:12%;" >
+             Enter Discount Code:</label>
           <input type="text" id="name" name="user_name">
-          <button class="button1">Submit</button>
+          <button class="submit"><a style="color:black;"> Submit</a></button>
         </ul>
-        <div style="margin-left:35%;
+        <div style="margin-left:43%; margin-top: -10px;
               font-family:'Baloo Thambi 2', cursive;">
               OR </div>
 
 
-      <button  class="discount" onclick="newDiscount()"> Request Discount</button>
-        <button style="margin-left:80%;margin-top:10%;"  class="button1" onclick="newDiscount()"> Check Out</button>
-
+      <button  class="discount" onclick="newDiscount()"> <a style="color:black;"> Request Discount</a> </button>
+      <div>
+        <button id="myButton"> <a style="color:black;" href="checking.html"> Check Out</a></button>
+      </div>
           </form>
       </div>
 
