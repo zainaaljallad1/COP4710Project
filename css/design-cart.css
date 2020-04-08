@@ -54,7 +54,7 @@ body {
   width: 550px;
   height: 420px;
   margin-left: 55%;
-  margin-top: -10%;
+  margin-top: -15%;
   background: #FFFFFF;
   box-shadow: 3px 4px 5px 2px rgba(0,0,0,0.10);
   border-radius: 6px;
@@ -63,8 +63,9 @@ body {
 }
 
 .item {
-  padding: 20px 30px;
+  padding: 10px 30px;
   height: 40px;
+  width: 100%;
   display: flex;
 }
 
@@ -85,7 +86,7 @@ body {
 .description {
   padding-top: 10px;
   margin-right: 80px;
-  width: 50px;
+  width: 30px;
 }
 .description span {
   display: block;
@@ -102,6 +103,7 @@ body {
   margin-top: 8px;
   color: #86939E;
 }
+
 .quantity {
   padding-top: 18px;
   margin-right: 80px;
@@ -119,16 +121,10 @@ body {
 button[class*=btn] {
   width: 30px;
   height: 30px;
-  background-color: #E1E8EE;
-  border-radius: 6px;
+  background-color: white;
+  border-radius: 4px;
   border: none;
   cursor: pointer;
-}
-.minus-btn img {
-  margin-top: 3px;
-}
-.plus-btn img {
-  margin-top: 3px;
 }
 
 button:focus,
@@ -170,20 +166,51 @@ input:focus {
 }
 
 .discount{
-  width: 100px;
   position:relative;
-  margin-top: 10px;
-  margin-left: 40%;
+  width: 200px;
+  height: 30px;
+  margin-left: 25%;
+  font-size: 15px;
   background-color: white;
   color: black;
   border: 2px solid #6b7494;
   font-family:'Baloo Thambi 2', cursive;
 }
-.button1 {
+.discount_title {
+  font-size: 30px;
+  position: relative;
+  font-family:'Baloo Thambi 2', cursive;
+  color: #6b7494;
+  margin-left: 10%;
+}
+.submit {
   position: relative;
   background-color: white;
   color: black;
   border: 2px solid #6b7494; /* Green */
-  width: 80px;
+  width: 100px;
+  height: 30px;
+  margin-left: 30%;
+  font-size: 15px;
   font-family:'Baloo Thambi 2', cursive;
+}
+input {
+  width: 55%;
+  height: 25px;
+  position: relative;
+  margin-left: 12%;
+  margin-right: 10px;
+  margin-bottom: 15px;
+}
+#myButton{
+  position: relative;
+  background-color: white;
+  color: black;
+  border: 2px solid #6b7494;
+  width: 140px;
+  height: 30px;
+  font-family:'Baloo Thambi 2', cursive;
+  margin-left: 70%;
+  margin-top: 30px;
+  font-size: 15px;
 }

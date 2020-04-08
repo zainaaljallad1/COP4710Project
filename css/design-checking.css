@@ -1,0 +1,29 @@
+.form1{
+  margin-left:20px;
+  margin-top: 0%;
+}
+
+
+.title1 {
+  font-family:'Baloo Thambi 2', cursive;
+  font-size: 30px;
+  color: #6b7494;
+}
+
+
+.subtit {
+  margin-top: 20px;
+}
+
+.button1{
+  position: relative;
+  background-color: white;
+  color: black;
+  border: 2px solid #6b7494;
+  width: 140px;
+  height: 30px;
+  font-family:'Baloo Thambi 2', cursive;
+  margin-left: 70%;
+  margin-top: 30px;
+  font-size: 15px;
+}
