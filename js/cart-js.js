@@ -4,18 +4,18 @@ document.getElementById('totalCost').innerHTML="$"+total;
 
 function incrementValue()
 {
-    var value = parseInt(document.getElementById('name').value, 10);
+    var value = parseInt(document.getElementById('quantity').value, 10);
     value = isNaN(value) ? 0 : value;
     value++;
     total += 10;
     document.getElementById('totalCost').innerHTML="$"+total;
-    document.getElementById('name').value = value;
+    document.getElementById('quantity').value = value;
 }
 function decrementValue()
 {
-    var value = parseInt(document.getElementById('name').value, 10);
+    var value = parseInt(document.getElementById('quantity').value, 10);
     value = isNaN(value) ? 0 : value;
-    if(value == 1)
+    if(value === 1)
     {
       alert("to proceed pls delete");
       return;
@@ -23,7 +23,7 @@ function decrementValue()
     value--;
     total -= 10;
     document.getElementById('totalCost').innerHTML="$"+total;
-    document.getElementById('name').value = value;
+    document.getElementById('quantity').value = value;
 }
 function newDiscount()
 {
@@ -35,5 +35,4 @@ function newDiscount()
         discountstring += arr[Math.floor(Math.random() * arr.length)];
 
     alert(discountstring);
-    });
 }
