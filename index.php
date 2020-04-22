@@ -19,14 +19,6 @@
       <a href="discount.html"> Check Discount Status </a>
       </div>
 
-      <div>
-      <a href="login.html"> Login </a>
-      </div>
-
-      <div>
-      <a href="signup.html"> Sign Up </a>
-      </div>
-
     </div>
 
   <div class = "divider"></div>
