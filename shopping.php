@@ -14,7 +14,7 @@
 
 
     <div class="menu">
-      <a href="shopping.html"> Shop </a>
+      <a href="shopping.php"> Shop </a>
       <a href="admin.php"> Admin </a>
       <a href="discount.html"> Check Discount Status </a>
 

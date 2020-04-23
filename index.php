@@ -12,7 +12,7 @@
 
     <div class="menu">
       <div>
-      <a href="shopping.html"> Shop </a>
+      <a href="shopping.php"> Shop </a>
       </div>
 
       <div>
