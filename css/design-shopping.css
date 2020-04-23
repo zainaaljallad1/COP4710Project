@@ -68,7 +68,7 @@ margin-bottom: 10px;
 .flip-card-front, .flip-card-back {
   position: absolute;
   width: 300px;
-  height:auto%;
+  height:auto;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
 }
@@ -82,4 +82,30 @@ margin-bottom: 10px;
   transform: rotateY(180deg);
 	font-family: 'Bitter', serif;
 	color: #F7FCFF;
+}
+
+.item-table{
+  border-radius: 10px;
+  background-color: #6b7494;
+  height: 10%;
+  width: 10%;
+  float: left;
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.info{
+  color:white;
+  text-align: center;
+}
+
+.cartButton{
+  
+  background-color: #313441;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+  border: none;
+  height: 40px;
 }

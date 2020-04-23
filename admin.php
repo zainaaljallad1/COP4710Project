@@ -34,9 +34,6 @@
       <div > <label for= "name"> Item Price </label> </div>
       $<input type="text" name="price">
 
-      <div > <label for= "name"> Discount % </label> </div>
-      <input type="text" name="discount">
-
       <div class="form-group" id="expiration-date">
             <div> <label class="subtit">Category</label></div>
 
