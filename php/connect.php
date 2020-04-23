@@ -1,16 +1,17 @@
 <?php
+/* Connect to an ODBC database using an alias */
+$dsn = 'localhost:3306';
+$user = 'root';
+$password = '';
+$dbname = "dbsystems";
 
-$serverName = "fdb25.awardspace.net";
-$username = "3409623_dbsystems1";
-$password = "d%{Ap9[N0d;^yI{o";
-$dbName = "3409623_dbsystems1";
-$port = "3306";
+// Create connection
+$conn = new mysqli($dsn, $user, $password, $dbname);
 
-$conn = mysqli_connect($serverName, $username, $password, $dbName, $port);
-
-if($conn){
-    echo "CONNECTED";
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
-else{
-    echo "ERROR";
-}
+
+?>
+

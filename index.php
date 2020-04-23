@@ -16,7 +16,7 @@
       </div>
 
       <div>
-      <a href="discount.html"> Check Discount Status </a>
+      <a href="discount.php"> Check Discount Status </a>
       </div>
 
     </div>

@@ -145,6 +145,7 @@ input:focus {
     height: auto;
     overflow: hidden;
   }
+
   .item {
     height: auto;
     flex-wrap: wrap;
@@ -183,14 +184,18 @@ input:focus {
   color: #6b7494;
   margin-left: 10%;
 }
+
+form{
+  display: flex;
+  align-items: center;
+}
 .submit {
   position: relative;
   background-color: white;
   color: black;
   border: 2px solid #6b7494; /* Green */
-  width: 100px;
   height: 30px;
-  margin-left: 30%;
+  margin:auto;
   font-size: 15px;
   font-family:'Baloo Thambi 2', cursive;
 }

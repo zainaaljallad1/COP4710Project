@@ -14,8 +14,9 @@
 
     <div class="menu">
       <a href="shopping.php"> Shop </a>
+      <a href="cart.php"> Cart </a>
       <a href="admin.php"> Admin </a>
-      <a href="discount.html"> Check Discount Status </a>
+      <a href="discount.php"> Check Discount Status </a>
     </div>
 
 
@@ -24,21 +25,20 @@
 
 <?php $query = "SELECT * FROM Items;";
 
-      if($result = mysqli_query($conn, $query)){
-      while($row = mysqli_fetch_row($result)){
+      $result = $conn->query($query);
+      while($row = $result->fetch_assoc()){
 ?>
 
-# row[0]=>id, row[1]=>name, row[3]=> price
+
 <div class="item-table">
-      <form action="cart.php?id=<?php echo row[0]; ?>" method="POST">
-        <p class="info"> <?php echo $row[1]; ?> : $<?php echo $row[3];?> </p>
-        <input value=<?php echo $row[0]; ?> id="itemId" type="hidden">
+      <form action="php/addToCart.php" method="POST">
+        <p class="info"> <?php echo $row['ItemName']; ?> : $<?php echo $row['ItemPrice'];?> </p>
+        <input name="item" value="<?php echo $row['ItemID']; ?>" type="hidden">
         <input type="submit" class="cartButton" value="Add to Cart"/> 
         <p>---------------------</p>
       </form>
 </div>
-      <?php }
-      } ?>
+      <?php } ?>
 
 </body>
 

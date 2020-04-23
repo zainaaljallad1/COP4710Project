@@ -16,7 +16,7 @@
     </div>
 
     <div>
-    <a href="discount.html"> Check Discount Status </a>
+    <a href="discount.php"> Check Discount Status </a>
     </div>
 
   </div>
@@ -25,11 +25,11 @@
     <div class="shopping-cart">
 
 
-      <form name = "form1" style="margin-left:90px;">
+      <form action="php/checkDiscount.php" method="POST" style="margin-left:90px;">
         <div class="discount_title">
           <label for= "name"> Enter Discount Code: </label> </div>
-          <input type="text" name="user_name">
-          <button class="submit"><a style="color:black;"> Submit</a></button>
+          <input type="text" name="dCode">
+          <input type="submit" value="Submit"/>
           </form>
       </div>
 

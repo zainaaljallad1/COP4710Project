@@ -3,7 +3,6 @@
 
 <head>
     <title> Office Supply Store </title>
-    <link rel="stylesheet" href="css/design-cart.css" type="text/css">
     <link rel="stylesheet" href="css/design-checking.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
 </head>

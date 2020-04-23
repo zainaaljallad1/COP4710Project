@@ -18,15 +18,15 @@
     </div>
 
     <div>
-    <a href="discount.html"> Check Discount Status </a>
+    <a href="discount.php"> Check Discount Status </a>
     </div>
 
     <div>
-    <a href="login.html"> Login </a>
+    <a href="login.php"> Login </a>
     </div>
 
     <div>
-    <a href="signup.html"> Sign Up </a>
+    <a href="signup.php"> Sign Up </a>
     </div>
   </div>
 

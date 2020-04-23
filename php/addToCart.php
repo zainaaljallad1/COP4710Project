@@ -1,15 +1,22 @@
 <?php
-include_once "connection.php";
+$dsn = 'localhost:3306';
+$user = 'root';
+$password = '';
+$dbname = "dbsystems";
 
-$item = (is_numeric($_POST['item']) ? (int)$_POST['item'] : 0);
+// Create connection
+$conn = new mysqli($dsn, $user, $password, $dbname);
 
-$query = "UPDATE Items SET InCart = 1 WHERE (ItemID = $item)";
-          
-if (mysqli_query($conn, $query)) {
-    echo "Record updated successfully";
-} else {
-    echo "Error updating record: " . mysqli_error($conn);
+// Check connection
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
 }
 
-$close = mysqli_close($conn);
-//header("Location: ../shopping.php");
+$item = (int)$_POST['item'];
+
+$query = "UPDATE Items SET InCart = 1 WHERE ItemID = $item";
+
+$conn->query($query) or die(mysqli_error($conn));
+$conn->close();
+
+header("Location: ../shopping.php?added=success");
