@@ -7,39 +7,28 @@
     <link rel="stylesheet" href="css/design-checking.css" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2&display=swap" rel="stylesheet">
 </head>
-
 <body>
   <h1 class="title"> Office Supplies </h1>
-
   <div class="menu">
     <div>
     <a href="shopping.php"> Shop </a>
     </div>
-
     <div>
     <a href="discount.html"> Check Discount Status </a>
     </div>
-
-
   </div>
-
 <div class = "divider"></div>
-
 <div class="shopping-cart">
-
-
-
       <div  class="title1"> Credit Card Information </div>
 <form id="msform" action="php/submit.php" method="POST">
       <div class="subtit"> <label for= "name"> Name on Credit Card: </label> </div>
       <input type="text"  name="full_name">
-
+      <div> <label for= "name"> Address: </label> </div>
+      <input type="text"  name="address">
       <div > <label for= "name"> Credit Card Number </label> </div>
       <input type="text" id="cardNumber">
-
       <div>  <label for= "name"> CVV</label>   </div>
       <input type="text" id="cvv">
-
       <div class="form-group" id="expiration-date">
             <div> <label class="subtit">Expiration Date</label></div>
                 <select>
@@ -67,11 +56,7 @@
             </div>
         <div> <input type="submit" class="button1" value="Submit"/>  </div>
       </form>
-
   </div>
-
 <script type="text/javascript" src="js/cart-js.js"></script>
 </body>
-
-
 </html>
