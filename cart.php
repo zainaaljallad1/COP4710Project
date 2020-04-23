@@ -64,14 +64,24 @@
               font-family:'Baloo Thambi 2', cursive;">
               OR </div>
 
-
-      <button  class="discount" onclick="newDiscount()"> <a style="color:black;"> Request Discount</a> </button>
+      # clicking button shows discount, md5 hash of item name
+      <button class="discount" onclick="showDiscount()"> <a style="color:black;">Request Discount</a> </button>
+      <p id="dCode" style="display:none;"> <?php md5($row[1]);?> </p>
+      <script>
+          function showDiscount() {
+            var x = document.getElementById("dCode");
+            if (x.style.display === "none") {
+              x.style.display = "block";
+          }
+      </script>
       <div>
         <button id="myButton"> <a style="color:black;" href="checking.html"> Check Out</a></button>
       </div>
           </form>
       </div>
-
+      <?php }
+      } ?>
     <script type="text/javascript" src="js/cart-js.js"></script>
+
 </body>
 </html>
