@@ -1,3 +1,5 @@
+<?php include_once "php/connect.php" ?>
+
 <!DOCTYPE html>
 <html>
 
@@ -22,38 +24,33 @@
   
   </div>
 
+  <?php $itemId=substr($_SERVER['QUERY_STRING'], 3);?>
+  <p><?php echo $itemId;?></p>
+  <?php $query = "SELECT * FROM Items WHERE ItemID=$itemId;";
+
+    if($result = mysqli_query($conn, $query)){
+
+    while($row = mysqli_fetch_row($result)){
+  ?>
+
+# row[1]=>name row[4]=>category
 <div class = "divider"></div>
     <div class="shopping-cart">
       <!-- Product #1 -->
       <div class="item">
+        <p name="itemName"> <?php echo $row[1];?> </p>
+        <p name="description"> <?php echo $row[4];?> </p>
 
-        <div class="image">
-          <img src="assets/paper.jpg"> </img>
-        </div>
 
         <div class="description">
           <span>Paper</span>
         </div>
 
-        <div>
-          <button class="minus-btn" type="button" name="button" onclick="decrementValue()"
-           value="Decrement Value">
-            <img src="assets/minus.svg"> </img>
-          </button>
-        </div>
-
         <input type="text" id="quantity" value="1">
 
 
-        <div>
-            <button class="plus-btn" type="button" name="button" onclick="incrementValue()"
-             value="Increment Value">
-              <img src="assets/plus.svg"> </img>
-          </button>
-        </div>
 
-
-        <div class="total-price" id="totalCost" value = "10"></div>
+        <div name="total-price" class="total-price" id="totalCost" value=<php echo $row[3];?>></div>
       </div>
 
       <form name = "form1" style="margin-left:50px;">

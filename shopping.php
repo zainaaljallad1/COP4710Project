@@ -28,10 +28,11 @@
       while($row = mysqli_fetch_row($result)){
 ?>
 
+# row[0]=>id, row[1]=>name, row[3]=> price
 <div class="item-table">
-      <form action="php/addToCart.php" method="POST">
+      <form action="cart.php?id=<?php echo row[0]; ?>" method="POST">
         <p class="info"> <?php echo $row[1]; ?> : $<?php echo $row[3];?> </p>
-        <input type="hidden" name="item" value="<?php echo $row[0] ?>"/>
+        <input value=<?php echo $row[0]; ?> id="itemId" type="hidden">
         <input type="submit" class="cartButton" value="Add to Cart"/> 
         <p>---------------------</p>
       </form>
