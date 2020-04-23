@@ -32,7 +32,7 @@
       <form action="php/addToCart.php" method="POST">
         <p class="info"> <?php echo $row[1]; ?> : $<?php echo $row[3];?> </p>
         <input type="hidden" name="item" value="<?php echo $row[0] ?>"/>
-        <input type="submit" class="cartButton" value="Add to Cart"/>
+        <input type="submit" class="cartButton" value="Add to Cart"/> 
         <p>---------------------</p>
       </form>
 </div>
