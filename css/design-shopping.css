@@ -2,6 +2,9 @@ body {
   background-color: #F7FCFF;
 }
 
+.item-table{
+  color: black;
+}
 
 h1 {
   position: relative;
@@ -36,7 +39,7 @@ padding: 0;
 margin-bottom: 10px;
 }
 .shoppingmenu{
-  color: white; 
+  color: black; 
 }
 .flip-card {
   background-color: transparent;

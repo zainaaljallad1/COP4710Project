@@ -65,7 +65,7 @@
                     <option value="21"> 2025</option>
                 </select>
             </div>
-        <div> <button class="button1">Submit</button>  </div>
+        <div> <input type="submit" class="button1" value="Submit"/>  </div>
       </form>
 
   </div>

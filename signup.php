@@ -9,7 +9,6 @@
 </head>
 
 <body>
-  <!-- multistep form -->
 
   <h1 class="title"> Office Supplies </h1>
 
